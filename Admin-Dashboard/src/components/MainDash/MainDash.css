@@ -1,5 +1,6 @@
 .MainDash {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align items to the start */
+  gap: 2rem; /* Add consistent spacing between items */
 }

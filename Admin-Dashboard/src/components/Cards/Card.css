@@ -1,2 +1,137 @@
-.Card {
+/* CompactCard */
+.CompactCard {
+  display: flex;
+  flex: 1;
+  height: 7rem !important;
+  border-radius: 0.7rem;
+  color: white;
+  padding: 1rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.CompactCard:hover {
+  box-shadow: none;
+}
+
+.radialBar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.CircularProgressbar {
+  width: 4rem !important;
+  overflow: visible;
+}
+
+.CircularProgressbar-path {
+  stroke: white !important;
+  stroke-width: 12px !important;
+  filter: drop-shadow(2px 4px 6px white);
+}
+
+.CircularProgressbar-trail {
+  display: none;
+}
+
+.CircularProgressbar-text {
+  fill: white !important;
+}
+
+.radialBar > span {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.detail {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.detail > img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.detail > :nth-child(2) {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.detail > :nth-child(3) {
+  font-size: 15px;
+}
+
+/* ExpandedCard */
+.ExpandedCard {
+  position: absolute;
+  width: 35rem; /* Increased width for more content */
+  height: 25rem; /* Increased height */
+  z-index: 9; /* Ensure it's above other elements */
+  left: 5%; /* Center horizontally */
+  top: 5%; /* Center vertically */
+  border-radius: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* Adjusted for better content distribution */
+  padding: 1.5rem; /* Increased padding */
+  background: var(--card-bg); /* Use a variable for background */
+  overflow: none; /* Enable scrolling for larger content */
+}
+
+.ExpandedCard > span:nth-of-type(1) {
+  color: white;
+  font-size: 2rem; /* Larger font size for title */
+  font-weight: bold;
+  text-shadow: 0px 0px 15px white;
+}
+
+.ExpandedCard > span:nth-of-type(2) {
+  color: rgb(228, 224, 224);
+  font-size: 1.2rem; /* Slightly larger font for value */
+}
+
+.chartContainer {
+  width: 90%; /* Wider chart container */
+  margin-top: 1rem; /* Add some space above the chart */
+}
+
+.ExpandedCard .closeButton {
+  position: absolute;
+  right: 1.5rem; /* Adjusted position */
+  top: 1.5rem; /* Adjusted position */
+  cursor: pointer;
+  color: white; /* Close button color */
+  font-size: 1.5rem; /* Larger close button */
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 1200px) {
+  .ExpandedCard {
+    width: 95%;
+    left: 2.5%;
+    top: 2.5%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ExpandedCard {
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 0;
+    height: 100vh;
+  }
+  .ExpandedCard .closeButton {
+    right: 1rem;
+    top: 1rem;
+  }
 }

@@ -11,7 +11,10 @@
   },
   "dependencies": {
     "@iconscout/react-unicons": "^2.2.5",
+    "framer-motion": "^12.23.24",
     "react": "^19.1.1",
+    "react-apexcharts": "^1.8.0",
+    "react-circular-progressbar": "^2.2.0",
     "react-dom": "^19.1.1"
   },
   "devDependencies": {

@@ -57,6 +57,7 @@ export const CardsData = [
         data: [31, 40, 28, 51, 42, 109, 100],
       },
     ],
+    id: 0,
   },
   {
     title: "Revenue",
@@ -73,6 +74,7 @@ export const CardsData = [
         data: [10, 100, 50, 70, 80, 30, 40],
       },
     ],
+    id: 1,
   },
   {
     title: "Expenses",
@@ -90,6 +92,7 @@ export const CardsData = [
         data: [10, 25, 15, 30, 12, 15, 20],
       },
     ],
+    id: 2,
   },
 ];
 
