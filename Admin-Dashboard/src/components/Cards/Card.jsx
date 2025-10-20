@@ -51,6 +51,7 @@ function CompactCard({ param, onCardClick }) {
           value={param.barValue}
           text={`%${param.barValue}`}
         />
+        <span>{param.title}</span>
       </div>
       <div className="detail">
         <Png />
